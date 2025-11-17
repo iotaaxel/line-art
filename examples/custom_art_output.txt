@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/axel/Development/Misc/line-art/examples/custom_art.py", line 6, in <module>
+    from main import create_canvas, draw_line, display_canvas
+ModuleNotFoundError: No module named 'main'

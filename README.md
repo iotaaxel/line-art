@@ -54,12 +54,60 @@ Enter lines (format: x1,y1 x2,y2)
 
 ## Examples
 
-### Star Pattern
+### Example Output
+
+Here's what you can create with Line-Art:
+
+**Simple Lines:**
+```
+                         
+ **            *         
+  ***           *        
+   * **         *        
+   *   **        *       
+    *    **      *       
+    *             *      
+     *            *      
+      *            *     
+      *            *     
+       *            *    
+       *                 
+        *                
+```
+
+**Abstract Composition:**
+```
+     *****************************************    
+     * **                                  ***    
+     *   **                              **  *    
+     *    ***                          **    *    
+     *      ***                      **      *    
+     *        ***********************        *    
+     *         ****              ***         *    
+     *    ***  *  ***          **  *  ***    *    
+     *       *****  ***      **  *****       *    
+     *         *  *******  ******  *         *    
+     *         *       *****       *         *    
+     *         *  *******  ******  *         *    
+     *       *****  ***      **  *****       *    
+     *    ***  *  ***          **  *  ***    *    
+     *         ****              ***         *    
+     *        ***********************        *    
+     *      ***                      **      *    
+     *    ***                          **    *    
+     *   **                              **  *    
+     * **                                  ***    
+     *****************************************    
+```
+
+### Generate More Art
+
+**Star Pattern:**
 ```bash
 python gallery.py
 ```
 
-### Interactive Drawing
+**Interactive Drawing:**
 ```bash
 python main.py
 # Enter: 1,1 10,10 5,5 15,15 10,1 1,10
@@ -78,6 +126,58 @@ Run `python gallery.py` to see examples including:
 - 🎨 Abstract art
 - 🕉️ Mandala patterns
 - 🌊 Wave patterns
+
+**Example Star Pattern:**
+```
+              **              
+              **              
+             * **             
+             * **             
+             * **             
+            *  * *            
+            *  * *            
+            *  * *            
+   ************************   
+    ****   *   *  *   ****    
+      * ****   *  * ** *      
+       ** **** * *** **       
+         **   ***  **         
+          **  * * **          
+         *  **   *  *         
+         *  **  **  *         
+         * *  **  * *         
+        *  * *  *  * *        
+        * ***    ** **        
+        ***        ***        
+       ***          ***       
+       *              *       
+```
+
+**Geometric Cross Pattern:**
+```
+                    
+                    
+          *         
+         ***        
+        * * *       
+       *  *  *      
+      *   *   *     
+     *    *    *    
+    *     *     *   
+   *      *      *  
+  ***************** 
+   *      *      *  
+    *     *     *   
+     *    *    *    
+      *   *   *     
+       *  *  *      
+        * * *       
+         ***        
+          *         
+                    
+```
+
+View all gallery examples in the `examples/` directory or run `python gallery.py`!
 
 ## Requirements
 
