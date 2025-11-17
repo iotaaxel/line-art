@@ -45,20 +45,57 @@ def test_display():
     return True
 
 if __name__ == "__main__":
+    import sys
     print("=" * 50)
     print("Testing Line-Art")
     print("=" * 50)
     
+    tests_passed = 0
+    tests_failed = 0
+    
     try:
         test_single_line()
-        test_multiple_lines()
-        test_odd_coordinates()
-        test_display()
-        print("\n" + "=" * 50)
-        print("All tests passed! ✓")
-        print("=" * 50)
+        tests_passed += 1
     except Exception as e:
-        print(f"\nTest failed: {e}")
+        tests_failed += 1
+        print(f"Test 1 failed: {e}")
         import traceback
         traceback.print_exc()
+    
+    try:
+        test_multiple_lines()
+        tests_passed += 1
+    except Exception as e:
+        tests_failed += 1
+        print(f"Test 2 failed: {e}")
+        import traceback
+        traceback.print_exc()
+    
+    try:
+        test_odd_coordinates()
+        tests_passed += 1
+    except Exception as e:
+        tests_failed += 1
+        print(f"Test 3 failed: {e}")
+        import traceback
+        traceback.print_exc()
+    
+    try:
+        test_display()
+        tests_passed += 1
+    except Exception as e:
+        tests_failed += 1
+        print(f"Test 4 failed: {e}")
+        import traceback
+        traceback.print_exc()
+    
+    print("\n" + "=" * 50)
+    if tests_failed == 0:
+        print(f"All {tests_passed} tests passed! ✓")
+        print("=" * 50)
+        sys.exit(0)
+    else:
+        print(f"Tests: {tests_passed} passed, {tests_failed} failed ✗")
+        print("=" * 50)
+        sys.exit(1)
 

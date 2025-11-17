@@ -12,11 +12,12 @@ def run_script(script_name, description):
     print(f"📋 {description}")
     print("=" * 70)
     try:
+        import os
         result = subprocess.run(
             [sys.executable, script_name],
             capture_output=True,
             text=True,
-            cwd="/Users/axel/Development/Misc/line-art"
+            cwd=os.path.dirname(os.path.abspath(__file__))
         )
         print(result.stdout)
         if result.stderr:
